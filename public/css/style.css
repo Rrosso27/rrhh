@@ -1,0 +1,169 @@
+:root {
+    --btn-color: rgb(41, 41, 47);
+    --modal-color: white;
+    --text-white: white;
+
+}
+
+
+/* formualario  */
+
+.letter {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+}
+
+.letter_container {
+    margin-top: 10px;
+    width: 90%;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+}
+
+.form-control input {
+    width: 90%;
+    border-radius: 12px;
+}
+.form-control select{
+    width: 90%;
+    border-radius: 12px;
+}
+
+
+.btn_submit {
+    margin-top: 10px;
+    width: 150px;
+    height: 50px;
+    border: 1px solid;
+    border-radius: 12px;
+}
+
+/* formualario  */
+
+
+
+/* Modal */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #111111bd;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal--show {
+    opacity: 1;
+    pointer-events: unset;
+
+}
+
+.modal_container {
+    margin: auto;
+    width: 90%;
+    max-width: 600px;
+    max-height: 90%;
+    background-color: var(--modal-color);
+    border-radius: 12px;
+    padding: 3em 2.5em;
+    display: grid;
+    gap: 1em;
+    place-items: center;
+    grid-auto-columns: 100%;
+}
+
+.modal_title {
+    font-size: 2.5rem;
+}
+
+.modal_form {
+    margin-bottom: 10px;
+}
+
+.modal_close {
+    background-color: var(--btn-color);
+    width: 150px;
+    height: 50px;
+    border-radius: 12px;
+    display: flex;
+    border: 1px solid;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-white);
+    transition: background-color .3s;
+}
+
+.modal_close:hover {
+    width: 160px;
+    background-color: var(--modal-color);
+    color: var(--btn-color);
+}
+
+/* Modal */
+table {
+    height: 100%;
+    border: 1px solid;
+    background-color: white;
+    text-align: left;
+}
+
+th, td {
+    padding: 25px;
+}
+thead {
+    background-color: var(--btn-color) ;
+    color: var(--text-white);
+}
+
+/* table */
+
+.button{
+    width: 80%;
+    border: 1px solid ;
+    border-radius: 5px;
+    color: var(--text-white);
+
+}
+
+.danger {
+    background-color: red;
+    border: 1px red ;
+}
+
+
+.success {
+    background-color: green;
+}
+
+
+.warning {
+    background-color: rgb(199, 191, 40);
+}
+
+.primary {
+    background-color: blue;
+}
+
+.black {
+    background-color: var(--btn-color);
+
+}
+
+
+
